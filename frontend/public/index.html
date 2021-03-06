@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- js/jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="js/index.js"></script>
+
+</head>
+<body>
+
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="/">
+            <img src="img/meme.jpg" alt="logo" style="width:40px;">
+        </a>
+        
+        <!-- Links -->
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link active" href="html/allMeme.html" id="all-memes">All Memes</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <!-- form for submitting meme -->
+    <div class="d-flex justify-content-center align-items-center container ">
+
+        <div class="row">
+            <form action="#" class="meme-form justify-content-center">
+                <div class="form-group">
+                    <label for="name">Meme Owner <span style="color: red;">*</span></label>
+                    <input type="text" class="form-control" placeholder="Enter your full name" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="caption">Caption <span style="color: red;">*</span></label>
+                    <input type="text" class="form-control" placeholder="Be creative with the caption" id="caption">
+                </div>
+        
+                <div class="form-group">
+                    <label for="url">Meme URL <span style="color: red;">*</span></label>
+                    <input type="url" class="form-control" placeholder="Enter URL of your meme here" id="url">
+                </div>
+                
+                <p style="display: none; color: red;" id="msg-element"></p>
+                <button type="button" class="btn btn-primary" id="meme-post">Submit</button>
+            </form>
+        </div>
+
+    </div>
+    
+</body>
+</html>
